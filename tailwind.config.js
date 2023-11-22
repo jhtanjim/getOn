@@ -4,12 +4,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  daisyui: {
+    themes: ["white"],
+  },
   theme: {
     extend: {},
   },
-  daisyui: {
-    themes: ['light', "night"],
-  },
   plugins: [require("daisyui")],
 }
-
