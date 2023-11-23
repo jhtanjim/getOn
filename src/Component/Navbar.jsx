@@ -1,4 +1,5 @@
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -31,13 +32,16 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#911e2b] rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a>Category</a>
+                <Link to="category">Category</Link>
               </li>
               <li>
-                <a>About</a>
+                <Link to="about">About</Link>
+              </li>
+              <li>
+                <Link to="contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -48,18 +52,18 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold text-lg">
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             
             <li>
-              <a>Category</a>
+              <Link to="category">Category</Link>
             </li>
             
             <li>
-              <a>About</a>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="contact">Contact</Link>
             </li>
           </ul>
 
