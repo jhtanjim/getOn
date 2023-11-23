@@ -5,17 +5,8 @@ const Navbar = () => {
   return (
     <div className="bg-[#f85606] text-white flex flex-col justify-center items-center h-full">
     {/* Search Bar */}
-    <div className="flex flex-col justify-center items-center p-4 w-full">
-      <div className="flex items-center space-x-4 relative">
-      <input
-        type="text"
-        placeholder="Search..."
-        className="px-8 lg:px-60 py-3 bg-white text-gray-800 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-[#911e2b] "
-      />
-      <button className="px-8 py-4 bg-[#911e2b] text-white rounded-full shadow-md absolute right-0">
-      <FaSearch />
-      </button>
-    </div>
+    <div className="flex flex-col justify-center items-center w-full lg:px-10">
+
     <div className="navbar bg-base-100">
       <div className="navbar-start">
           <div className="dropdown">
@@ -50,7 +41,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-4xl font-bold">GetOn</a>
+          <a className="text-3xl font-extrabold lg:ml-0 ml-10">
+           GetOn
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold text-lg">
@@ -69,6 +62,18 @@ const Navbar = () => {
               <a>Contact</a>
             </li>
           </ul>
+
+          <div className="flex items-center space-x-4 relative pl-20">
+      <input
+        type="text"
+        placeholder="Search..."
+        className="px-8 lg:px-32 py-2 bg-white text-gray-800 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-[#911e2b] "
+      />
+      <button className="px-8 py-3 bg-[#911e2b] text-white rounded-full shadow-md absolute right-0">
+      <FaSearch />
+      </button>
+    </div>
+
         </div>
         <div className="navbar-end">
         <div className="flex items-center gap-4">
@@ -109,6 +114,9 @@ const Navbar = () => {
   </div>
           </div>
     </div>
+
+
+
   </div>
 </div>
   );
