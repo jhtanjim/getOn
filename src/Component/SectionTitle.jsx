@@ -1,12 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const SectionTitle = ({ heading, subHeading }) => {
-    return (
-        <div className='mx-auto text-center  my-24  lg:w-3/12'>
-            <p className=' text-yellow-600 mb-2'>---{subHeading}---</p>
-            <h3 className='lg:text-4xl uppercase border-y-4  lg:py-4'>{heading}</h3>
-        </div>
-    );
+  return (
+    <div>
+      <div className="max-w-screen-xl lg:mx-auto md:mx-24  mx-4 lg:my-16 my-12 ">
+        <h1 className="lg:text-5xl md:text-5xl text-2xl  font-bold uppercase">
+          {heading}{" "}
+          <span className="lg:text-5xl md:text-5xl text-2xl font-bold text-[#f85606]">
+            {subHeading}
+          </span>
+        </h1>
+        <div className=" text-xl mt-3 w-60 lg:w-[470px]  md:w-[450px] border-b-2 text-red-600"></div>
+      </div>
+    </div>
+  );
 };
 
 export default SectionTitle;

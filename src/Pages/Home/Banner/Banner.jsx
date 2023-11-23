@@ -8,6 +8,7 @@ const Banner = () => {
           <img src={Banner1} className="w-full" />
         </div>
       </div>
+      
     </div>
   );
 };
